@@ -1,5 +1,8 @@
 # opportunity detector and automated trading
+ 
+系统架构分：行情采集，情报处理，策略交易，交易执行，数据统计等几个核心模块，模块之间通信通过kafka进行解耦。
 
+目前正在处理的是行情采集模块，从xcrypto独立出去，方便扩展。
 
 It gets order books from supported exchanges and calculate arbitrage and triangular-arbitrage
 opportunities between each markets. It takes market depth into account.
